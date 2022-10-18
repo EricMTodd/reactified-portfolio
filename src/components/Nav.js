@@ -6,7 +6,8 @@ const Nav = () => {
     height: '50px',
     display: 'flex',
     alignItems: 'center',
-    padding: '0 15px 0 15px'
+    padding: '0 15px 0 15px',
+    gap: '7.5px'
   }
 
   let linkStyles = {
@@ -25,6 +26,8 @@ const Nav = () => {
   return(
     <nav style={navStyles}>
       <Link to='/' style={linkStyles} onMouseEnter={linkHoverEventHandler} onMouseLeave={linkHoverEventHandler}>Home</Link>
+      <Link to='/about' style={linkStyles} onMouseEnter={linkHoverEventHandler} onMouseLeave={linkHoverEventHandler}>About</Link>
+      <Link to='/skills' style={linkStyles} onMouseEnter={linkHoverEventHandler} onMouseLeave={linkHoverEventHandler}>Skills</Link>
     </nav>
   )
 }
